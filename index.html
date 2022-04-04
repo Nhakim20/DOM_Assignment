@@ -133,7 +133,7 @@ a, a:hover, a:focus, a:active {
 
 <br>
 <div style="height: 300px; background-color: rgba(255,0,0,0.1);">
-    <h3>Category</h3>
+    <h3 id="change">Category</h3>
     <div class="row konten">
       <div class="col-2 card" style="margin: 5px;" >
         <a href="product.html"><img class="card-img-top" src="images/fashion.JPG" />
@@ -191,6 +191,10 @@ a, a:hover, a:focus, a:active {
 </div>
 
 <script>
+        setTimeout(() => {
+            document.getElementsByTagName("h3")[0].innerHTML ="List Produk";
+        }, 3000);
+
   document.getElementById("flash").onclick = () => {
       alert("Dapatkan Flash Disk 64 Gb seharga 10 ribu hanya di Flash Sale 04-04-22");
   }
@@ -203,17 +207,6 @@ a, a:hover, a:focus, a:active {
       alert("Deal off the day : Produk kecantikan sunscreen 260 ml hanya 10k idr");
   }
 
-  // let h1 = document.getElementsById("poin");
-
-  // h1.onclick = () => {
-  //     h1.innerHTML = (h1.innerHTML == "Un Clicked") ? "Clicked" : "Un Clicked";
-  // }
-
-  // let h2 = document.getElementsById("deal");
-
-  // h2.onmouseover = () => {
-  //     alert("Mouse Over");
-  // }
 
 </script> 
 
